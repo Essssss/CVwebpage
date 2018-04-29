@@ -1,0 +1,111 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+ .grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+
+   grid-auto-rows: minmax(50px, auto);
+   grid-template-areas:
+   "personalinfo mycontent mycontent"
+   "personalinfo mycontent mycontent"
+   "personalinfo mycontent mycontent";
+   background-color: #f5f5dc;
+
+ }
+.personalinfo{
+  grid-area: personalinfo;
+  display: grid;
+  gird-template-columns:1fr 1fr 1fr;
+  grid-template-areas:
+  "icons";
+background: url(https://images.pexels.com/photos/257930/pexels-photo-257930.jpeg)no-repeat;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment:fixed;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+margin: 0px;
+padding:3%;
+font-family: Anton;
+font-size: 150%;
+text-align: center;
+
+}
+.icons{
+  grid-area: icons;
+  margin: 20% 2% 0% 8%;
+  position: relative;
+  text-align: center;
+  font-size: 140%;
+}
+.mycontent{
+  grid-area: mycontent;
+  display: grid;
+  grid-template-columns: 1fr;
+   grid-auto-rows: minmax(50px, auto);
+  grid-template-areas:
+  "skills"
+  "education"
+  "experience"
+  "certifcations"
+  "projects"
+  "languages";
+  background-color: red;
+  font-family: Anton;
+  color: #1a1a1a;
+  font-size: 130%;
+  margin-left: 2%;
+}
+.education{
+  grid-area:education;
+  background-color:  #f5f5dc;
+
+}
+.experience{
+  grid-area:experience;
+  background-color:  #f5f5dc;
+}
+.skills{
+  grid-area:skills;
+  display:grid;
+  grid-template-columns: 1fr;
+   grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "technicalskills"
+    "personalskills";
+  background-color:  #f5f5dc;
+
+}
+.technicalskills{
+  grid-area: technicalskills;
+}
+.personalskills{
+  grid-area:personalskills;
+}
+.certifcations{
+  grid-area:certifcations;
+  background-color:  #f5f5dc;
+}
+.projects{
+  grid-area:projects;
+  background-color: #f5f5dc;
+}
+.languages{
+  grid-area: languages;
+  background-color:  #f5f5dc;
+}
+
+p{
+  font-size: 70%;
+  margin-left: 1%;
+}
+.pdates{
+  font-family: sans-serif;
+  text-align:right;
+  font-size: 50%;
+}
