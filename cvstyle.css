@@ -49,6 +49,7 @@ text-align: center;
   grid-template-columns: 1fr;
    grid-auto-rows: minmax(50px, auto);
   grid-template-areas:
+  "objective"
   "skills"
   "education"
   "experience"
@@ -97,6 +98,10 @@ text-align: center;
 }
 .languages{
   grid-area: languages;
+  background-color:  #f5f5dc;
+}
+.objective{
+  grid-area: objective;
   background-color:  #f5f5dc;
 }
 
